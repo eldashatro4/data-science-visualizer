@@ -101,9 +101,8 @@ const DSV = (() => {
     const route = () => show(location.hash.slice(1));
     window.addEventListener("hashchange", () => { route(); document.querySelector("section.lab:not([hidden]) h2")?.focus({ preventScroll: true }); });
     route();
-    const dark = matchMedia("(prefers-color-scheme: dark)");
     const btn = $("themeToggle");
-    const isDark = () => document.documentElement.dataset.theme ? document.documentElement.dataset.theme === "dark" : dark.matches;
+    const isDark = () => document.documentElement.dataset.theme === "dark";
     const label = () => { if (!btn) return; const next = isDark() ? "light" : "dark"; btn.textContent = next === "dark" ? "Dark theme" : "Light theme"; btn.setAttribute("aria-label", "Switch to " + next + " theme"); };
     btn?.addEventListener("click", () => {
       const next = isDark() ? "light" : "dark";
@@ -112,7 +111,6 @@ const DSV = (() => {
       label(); plots.forEach(p => p.draw());
     });
     label();
-    dark.addEventListener("change", () => { label(); plots.forEach(p => p.draw()); });
   }
 
   /* ---------- Python (Pyodide runs python/labs.py in the browser) ---------- */

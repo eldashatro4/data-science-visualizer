@@ -14,14 +14,7 @@
   padding-top: env(safe-area-inset-top, 0px);
   padding-bottom: env(safe-area-inset-bottom, 0px);
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    color-scheme: dark;
-    --paper: #0F1628; --sheet: #172038; --ink: #E8ECF6; --ink-soft: #A3AECA; --grid: #26304B; --axis: #4A5677;
-    --line: #8FA6FF; --accent: #FF8A5C; --orange: #FF6A3D; --guess: #E3A35F; --good: #3CCDB2; --bad: #FF7A9E;
-    --c1: #8FA6FF; --c2: #3CCDB2; --c3: #FF7A9E; --c4: #FFC35C; --c5: #C3A2FF; --c6: #6CC4FF; --c7: #B5D96A; --c8: #E5A584; --focus: #8FA6FF;
-  }
-}
+/* light is the default; dark only when the visitor picks it with the theme button */
 :root[data-theme="dark"] {
   color-scheme: dark;
   --paper: #0F1628; --sheet: #172038; --ink: #E8ECF6; --ink-soft: #A3AECA; --grid: #26304B; --axis: #4A5677;

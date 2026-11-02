@@ -73,4 +73,4 @@ Push the repo to GitHub, go to **Settings → Pages**, and choose the `main` bra
 
 ## Accessibility
 
-Keyboard-reachable controls with visible focus, respects reduced-motion and dark-mode settings, readable type (Atkinson Hyperlegible), and works with touch on phones.
+Keyboard-reachable controls with visible focus, respects reduced-motion settings, light theme by default with a dark-theme button, readable type (Atkinson Hyperlegible), and works with touch on phones.
