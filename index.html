@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Touch the Data: interactive data science labs</title>
+<meta name="description" content="Nine hands-on labs for introductory data science, from sampling to PageRank, each checked in real Python in the browser.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script>try { const t = localStorage.getItem("theme"); if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; } catch (e) {}</script>
+</head>
+<body>
+<header class="top">
+  <div class="theme-bar"><button type="button" class="btn theme-toggle" id="themeToggle" aria-label="Switch to dark theme">Dark theme</button></div>
+  <div class="wrap">
+    <h1>Touch the Data</h1>
+    <p class="lede">Nine hands-on labs that follow an intro data science course stop by stop, from sampling to PageRank. Drag the data, run the experiment, then check every number in real Python, right in your browser.</p>
+  </div>
+  <nav class="route" id="route" aria-label="Labs, in course order"></nav>
+</header>
+<main class="wrap">
+  <section class="lab" id="lab-sampling" aria-labelledby="h-sampling" hidden>
+    <div class="stage">
+      <canvas id="samplingCanvas" class="plot"></canvas>
+      
+      <div class="toolbar"><button class="btn primary" id="sOne">Draw 1 sample</button><button class="btn" id="sHundred">Draw 100</button><button class="btn" id="sThousand">Draw 1,000</button><button class="btn" id="sReset">Start over</button></div>
+      <div class="legend"><span><i style="background:var(--accent)"></i>Latest sample (ticks) and the CLT prediction (curve)</span><span><i style="background:var(--ink)"></i>True mean</span></div>
+      <div class="pybox">
+        <button class="btn py" id="samplingPy">Check it in Python</button>
+        <p class="pystatus" id="samplingPyStatus" aria-live="polite"></p>
+        <pre class="code" id="samplingPyCode" hidden></pre>
+        <pre class="out" id="samplingPyOut" hidden></pre>
+      </div>
+    </div>
+    <aside class="panel">
+      <p class="stop-label"><span class="badge">1</span>Midway</p>
+      <h2 id="h-sampling" tabindex="-1">Why averages behave</h2>
+      <p>Take many samples from a population and average each one. Whatever shape the population has, those averages pile up into a bell curve centered on the true mean, and their spread shrinks like σ/√n. That is the central limit theorem.</p>
+      <label class="ctl">Population<select id="sPop"><option value="wait">Train wait times (skewed)</option><option value="uniform">Uniform</option><option value="bimodal">Two humps (bimodal)</option></select></label>
+      <label class="ctl">Sample size (n) <output id="sNOut">5</output><input type="range" id="sN" min="1" max="100" step="1" value="5"></label>
+      <div class="readout"><div><span>Population mean</span><b id="sMu">–</b></div><div><span>Population SD (σ)</span><b id="sSigma">–</b></div><div><span>Samples drawn</span><b id="sCount">0</b></div><div><span>Mean of the means</span><b id="sMeanMeans">–</b></div><div><span>Observed spread of means</span><b id="sObsSE">–</b></div><div><span>Predicted σ/√n</span><b id="sPredSE">–</b></div></div>
+      <div class="notice"><strong>Try this</strong>Pick the skewed population with n = 1, draw 1,000, then repeat with n = 30. The averages turn bell-shaped even though the population never does.</div>
+    </aside>
+  </section>
+  <section class="lab" id="lab-eda" aria-labelledby="h-eda" hidden>
+    <div class="stage">
+      <canvas id="edaCanvas" class="plot"></canvas>
+      <p class="hint">Click along the axis to add a value. Drag a dot to move it. Double-click to remove it.</p>
+      <div class="toolbar"><button class="btn" id="eSym">Symmetric data</button><button class="btn" id="eSkew">Skewed data</button><button class="btn" id="eOutlier">Add an outlier</button><button class="btn" id="eClear">Clear</button></div>
+      <div class="pybox">
+        <button class="btn py" id="edaPy">Check it in Python</button>
+        <p class="pystatus" id="edaPyStatus" aria-live="polite"></p>
+        <pre class="code" id="edaPyCode" hidden></pre>
+        <pre class="out" id="edaPyOut" hidden></pre>
+      </div>
+    </div>
+    <aside class="panel">
+      <p class="stop-label"><span class="badge">2</span>Pulaski</p>
+      <h2 id="h-eda" tabindex="-1">Center, spread and outliers</h2>
+      <p>The box plot shows the median and the middle 50% of the data, the shaded band is one standard deviation around the mean, and red dots fall more than 1.5 × IQR outside the box.</p>
+      <label class="ctl">Data<select id="eSource"><option value="real-weekday">Real YEAR: weekday riders</option><option value="real-saturday">Real YEAR: Saturday riders</option><option value="real-sunday">Real YEAR: Sunday/holiday riders</option><option value="practice">Practice: minutes late</option></select></label>
+      <p class="hint" id="eNote"></p>
+      <div class="readout"><div><span>Mean</span><b id="eMean">–</b></div><div><span>Median</span><b id="eMedian">–</b></div><div><span>Standard deviation</span><b id="eSD">–</b></div><div><span>IQR (Q3 − Q1)</span><b id="eIQR">–</b></div><div><span>Values</span><b id="eN">0</b></div><div><span>Outliers</span><b id="eOut">–</b></div></div>
+      <p class="verdict" id="eGap"></p>
+      <div class="notice"><strong>Try this</strong>Add three outliers. The mean and SD jump; the median and IQR barely move. That is what “robust” means.</div>
+    </aside>
+  </section>
+  <section class="lab" id="lab-groupby" aria-labelledby="h-groupby" hidden>
+    <div class="stage">
+      <canvas id="groupbyCanvas" class="plot"></canvas>
+      
+      <div class="legend"><span><i style="background:#C60C30"></i>Red</span><span><i style="background:#00A1DE"></i>Blue</span><span><i style="background:#62361B"></i>Brown</span><span><i style="background:#009B3A"></i>Green</span><span><i style="background:#F9461C"></i>Orange</span><span><i style="background:#522398"></i>Purple</span><span><i style="background:#E27EA6"></i>Pink</span><span><i style="background:#F9E300"></i>Yellow</span><span>Faded dots are filtered out</span></div>
+      <div class="toolbar"><button class="btn" id="gTableBtn" aria-pressed="false">Show the raw data</button></div>
+      <div class="tablewrap"><table class="data" id="gRaw" hidden></table></div>
+      <div class="pybox">
+        <button class="btn py" id="groupbyPy">Check it in Python</button>
+        <p class="pystatus" id="groupbyPyStatus" aria-live="polite"></p>
+        <pre class="code" id="groupbyPyCode" hidden></pre>
+        <pre class="out" id="groupbyPyOut" hidden></pre>
+      </div>
+    </div>
+    <aside class="panel">
+      <p class="stop-label"><span class="badge">3</span>Kedzie</p>
+      <h2 id="h-groupby" tabindex="-1">Split, apply, combine</h2>
+      <p>Most wrangling questions look like this: keep some rows, split them into groups, summarize each group, and combine the results into a small table. Change the settings and watch the rows regroup.</p>
+      <label class="ctl">Data<select id="gSource"><option value="real">Real CTA ridership (loading…)</option><option value="practice">Practice data</option></select></label>
+      <p class="hint" id="gNote"></p>
+      <label class="ctl">Keep rows<select id="gFilter"><option value="all">All rows</option><option value="busy">Riders above 5 (hundred)</option><option value="weekday">Weekdays only</option><option value="weekend">Weekends only</option></select></label>
+      <label class="ctl">Group by<select id="gKey"><option value="line">Line</option><option value="day">Day type</option><option value="station">Station</option></select></label>
+      <label class="ctl">Summarize riders with<select id="gAgg"><option value="mean">mean</option><option value="median">median</option><option value="sum">sum</option><option value="count">count</option><option value="max">max</option></select></label>
+      <p class="hint" id="gKept"></p>
+      <div class="tablewrap"><table class="data" id="gTable"></table></div>
+      <p class="code-label">The same thing in Polars</p>
+      <pre class="code" id="gPolars"></pre>
+
+    </aside>
+  </section>
+  <section class="lab" id="lab-regression" aria-labelledby="h-regression" hidden>
+    <div class="stage">
+      <canvas id="regressionCanvas" class="plot"></canvas>
+      <p class="hint" id="rHover">Click to add a point. Drag to move it. Double-click to remove it.</p>
+      <div class="toolbar"><button class="btn" id="rRandom">Random practice data</button><button class="btn" id="rOutlier">Add an outlier</button><button class="btn" id="rSquares" aria-pressed="false">Show squared errors</button><button class="btn" id="rGuess" aria-pressed="false">Draw my own line</button><button class="btn" id="rClear">Clear</button></div>
+      <div class="toolbar"><button class="btn primary" id="rGD">Fit by gradient descent</button><label class="inline">Learning rate <select id="rLR"><option value="0.001">0.001 (slow)</option><option value="0.005">0.005</option><option value="0.01" selected>0.01</option><option value="0.02">0.02 (too big)</option></select></label></div>
+      <div class="legend"><span><i style="background:var(--line)"></i>Least squares</span><span id="rGDLegend" hidden><i style="background:var(--accent)"></i>Gradient descent</span><span id="rGuessLegend" hidden><i style="background:var(--guess)"></i>Your line</span></div>
+      <div class="pybox">
+        <button class="btn py" id="regressionPy">Check it in Python</button>
+        <p class="pystatus" id="regressionPyStatus" aria-live="polite"></p>
+        <pre class="code" id="regressionPyCode" hidden></pre>
+        <pre class="out" id="regressionPyOut" hidden></pre>
+      </div>
+    </div>
+    <aside class="panel">
+      <p class="stop-label"><span class="badge">4</span>Western</p>
+      <h2 id="h-regression" tabindex="-1">Fitting a line</h2>
+      <p>Least squares picks the line with the smallest total of squared vertical distances (residuals). Gradient descent finds the same line by taking small downhill steps on that error.</p>
+      <label class="ctl">Data<select id="rSource"><option value="real-saturday-weekday">Real YEAR: Saturday vs. weekday</option><option value="real-sunday-weekday">Real YEAR: Sunday vs. weekday</option><option value="practice">Practice: random points</option></select></label>
+      <p class="hint" id="rAxes"></p>
+      <div class="readout"><div class="wide"><span>Equation</span><b id="rEq">ŷ = –</b></div><div><span>R²</span><b id="rR2">–</b></div><div><span>Mean squared error</span><b id="rMSE">–</b></div><div><span>Points</span><b id="rN">0</b></div><div><span>Correlation r</span><b id="rR">–</b></div></div>
+      <div class="readout single" id="rGDBox" hidden><div class="wide"><span>Gradient descent</span><b id="rGDState">–</b></div></div>
+      <div class="readout single" id="rGuessBox" hidden><div class="wide"><span>Your line’s error vs. the best line</span><b id="rGuessMSE">–</b></div></div>
+      <div class="notice"><strong>Try this</strong>Run gradient descent at 0.001, then at 0.02. Too small crawls; too big overshoots and blows up.</div>
+    </aside>
+  </section>
+  <section class="lab" id="lab-overfit" aria-labelledby="h-overfit" hidden>
+    <div class="stage">
+      <canvas id="overfitCanvas" class="plot"></canvas>
+      
+      <div class="toolbar"><button class="btn" id="oNew">New data</button><label class="inline"><input type="checkbox" id="oTruth" checked> Show the true curve</label></div>
+      <div class="legend"><span><i style="background:var(--ink)"></i>Training error</span><span><i style="background:var(--accent)"></i>Test error</span><span><i style="background:var(--line)"></i>Current degree</span></div>
+      <canvas id="overfitErr" class="plot small" aria-label="Training and test error by polynomial degree"></canvas>
+      <div class="pybox">
+        <button class="btn py" id="overfitPy">Check it in Python</button>
+        <p class="pystatus" id="overfitPyStatus" aria-live="polite"></p>
+        <pre class="code" id="overfitPyCode" hidden></pre>
+        <pre class="out" id="overfitPyOut" hidden></pre>
+      </div>
+    </div>
+    <aside class="panel">
+      <p class="stop-label"><span class="badge">5</span>35th/Archer</p>
+      <h2 id="h-overfit" tabindex="-1">When a model learns the noise</h2>
+      <p>Filled dots train the model; hollow orange dots are held out for testing. Raise the polynomial degree: training error keeps falling, but test error eventually climbs. That gap is overfitting.</p>
+      <label class="ctl">Polynomial degree <output id="oDegOut">3</output><input type="range" id="oDeg" min="0" max="12" step="1" value="3"></label>
+      <p class="hint" id="oFormula"></p>
+      <label class="ctl">Number of points <output id="oNOut">24</output><input type="range" id="oN" min="12" max="60" step="1" value="24"></label>
+      <label class="ctl">Noise <output id="oNoiseOut">0.8</output><input type="range" id="oNoise" min="0.2" max="2" step="0.1" value="0.8"></label>
+      <div class="readout"><div><span>Training error (MSE)</span><b id="oTrain">–</b></div><div><span>Test error (MSE)</span><b id="oTest">–</b></div></div>
+      <p class="verdict" id="oVerdict"></p>
+      <div class="notice"><strong>Try this</strong>Find the degree with the lowest test error. Then add more points: more data lets complex models behave.</div>
+    </aside>
+  </section>
+  <section class="lab" id="lab-knn" aria-labelledby="h-knn" hidden>
+    <div class="stage">
+      <canvas id="knnCanvas" class="plot"></canvas>
+      <p class="hint">Click to add a training point. Drag to move it. Double-click to remove it.</p>
+      <div class="toolbar"><button class="btn" id="kNew">New data</button>
+        <fieldset class="seg"><legend>Click adds</legend><label><input type="radio" name="kClass" value="0"> On time</label><label><input type="radio" name="kClass" value="1" checked> Late</label></fieldset>
+        <label class="inline"><input type="checkbox" id="kBoundary" checked> Shade decision regions</label></div>
+      <div class="legend"><span><i style="background:var(--good)"></i>On time</span><span><i style="background:var(--bad)"></i>Late</span><span>Filled = training, ring = test</span></div>
+      <div class="pybox">
+        <button class="btn py" id="knnPy">Check it in Python</button>
+        <p class="pystatus" id="knnPyStatus" aria-live="polite"></p>
+        <pre class="code" id="knnPyCode" hidden></pre>
+        <pre class="out" id="knnPyOut" hidden></pre>
+      </div>
+    </div>
+    <aside class="panel">
+      <p class="stop-label"><span class="badge">6</span>Ashland</p>
+      <h2 id="h-knn" tabindex="-1">Classifying by neighbors</h2>
+      <p>k-nearest neighbors labels a new point by majority vote among the k closest training points. Hollow rings are test points the model never saw; an × marks a wrong prediction.</p>
+      <label class="ctl">Neighbors (k) <output id="kKOut">5</output><input type="range" id="kK" min="1" max="25" step="2" value="5"></label>
+      <label class="ctl">Class overlap <output id="kSpreadOut">1.4</output><input type="range" id="kSpread" min="0.6" max="2.6" step="0.1" value="1.4"></label>
+      <div class="readout"><div class="wide"><span>Test accuracy</span><b id="kAcc">–</b></div><div><span>Precision (late)</span><b id="kPrec">–</b></div><div><span>Recall (late)</span><b id="kRec">–</b></div></div>
+      <table class="confusion" aria-label="Confusion matrix"><thead><tr><th></th><th>Predicted late</th><th>Predicted on time</th></tr></thead>
+        <tbody><tr><th>Actually late</th><td class="hitc" id="kTP">0</td><td class="missc" id="kFN">0</td></tr><tr><th>Actually on time</th><td class="missc" id="kFP">0</td><td class="hitc" id="kTN">0</td></tr></tbody></table>
+      <div class="notice"><strong>Try this</strong>Set k = 1: the regions get jagged and chase every point. Raise k and watch the boundary smooth out.</div>
+    </aside>
+  </section>
+  <section class="lab" id="lab-kmeans" aria-labelledby="h-kmeans" hidden>
+    <div class="stage">
+      <canvas id="kmeansCanvas" class="plot"></canvas>
+      <p class="hint">Click to add points. Rings are centroids; shading shows the nearest centroid.</p>
+      <div class="toolbar"><button class="btn primary" id="kmStep">Next step</button><button class="btn" id="kmRun">Run to the end</button><button class="btn" id="kmReset">New starting centroids</button><button class="btn" id="kmData">New data</button></div>
+      <div class="pybox">
+        <button class="btn py" id="kmeansPy">Check it in Python</button>
+        <p class="pystatus" id="kmeansPyStatus" aria-live="polite"></p>
+        <pre class="code" id="kmeansPyCode" hidden></pre>
+        <pre class="out" id="kmeansPyOut" hidden></pre>
+      </div>
+    </div>
+    <aside class="panel">
+      <p class="stop-label"><span class="badge">7</span>Halsted</p>
+      <h2 id="h-kmeans" tabindex="-1">Grouping without labels</h2>
+      <p>k-means repeats two steps: assign each point to its nearest centroid, then move each centroid to the average of its points. It stops when no point changes group.</p>
+      <label class="ctl">Number of clusters (k) <output id="kmKOut">3</output><input type="range" id="kmK" min="1" max="8" step="1" value="3"></label>
+      <label class="ctl">Starting centroids<select id="kmInit"><option value="pp">k-means++ (spread out)</option><option value="rand">Random points</option></select></label>
+      <div class="readout"><div><span>Iteration</span><b id="kmIter">0</b></div><div><span>Next step</span><b id="kmPhase">Start</b></div><div class="wide"><span>Within-cluster sum of squares</span><b id="kmInertia">–</b></div></div>
+      <canvas class="spark" id="kmSpark" aria-label="Within-cluster sum of squares by iteration"></canvas>
+      <p class="hint">Sum of squares after each iteration. It never goes up.</p>
+      <div class="notice"><strong>Try this</strong>Choose random starting points and reset a few times. Different starts can land in different, worse groupings.</div>
+    </aside>
+  </section>
+  <section class="lab" id="lab-abtest" aria-labelledby="h-abtest" hidden>
+    <div class="stage">
+      <canvas id="abtestCanvas" class="plot"></canvas>
+      
+      <div class="toolbar"><button class="btn primary" id="abRun">Run one experiment</button><button class="btn" id="abMany">Run 1,000 experiments</button></div>
+      <div class="legend" id="abLegend"></div>
+      <div class="pybox">
+        <button class="btn py" id="abtestPy">Check it in Python</button>
+        <p class="pystatus" id="abtestPyStatus" aria-live="polite"></p>
+        <pre class="code" id="abtestPyCode" hidden></pre>
+        <pre class="out" id="abtestPyOut" hidden></pre>
+      </div>
+    </div>
+    <aside class="panel">
+      <p class="stop-label"><span class="badge">8</span>Roosevelt</p>
+      <h2 id="h-abtest" tabindex="-1">Real difference or luck?</h2>
+      <p>Set how each version really performs, then run an experiment with limited visitors. A two-proportion z-test asks whether the observed gap is bigger than chance alone would produce.</p>
+      <label class="ctl">True conversion rate, A <output id="abAOut">10.0%</output><input type="range" id="abA" min="1" max="50" step="0.5" value="10"></label>
+      <label class="ctl">True conversion rate, B <output id="abBOut">12.0%</output><input type="range" id="abB" min="1" max="50" step="0.5" value="12"></label>
+      <label class="ctl">Visitors per version <output id="abNOut">1,000</output><input type="range" id="abN" min="0" max="8" step="1" value="3"></label>
+      <p class="verdict" id="abVerdict">Run an experiment to see the result.</p>
+      <div class="readout" id="abReadout" hidden><div><span>Observed A</span><b id="abObsA">–</b></div><div><span>Observed B</span><b id="abObsB">–</b></div><div class="wide"><span>Difference B − A (95% CI)</span><b id="abDiff">–</b></div><div class="wide"><span>p-value</span><b id="abP">–</b></div></div>
+      <div class="notice" id="abTip"><strong>Try this</strong>Set both rates equal and run 1,000 experiments. About 5% still come out “significant”: the false positive rate.</div>
+    </aside>
+  </section>
+  <section class="lab" id="lab-network" aria-labelledby="h-network" hidden>
+    <div class="stage">
+      <canvas id="networkCanvas" class="plot"></canvas>
+      <p class="hint">In Connect mode, click two nodes to add or remove a link. Double-click a node to delete it.</p>
+      <div class="toolbar">
+        <fieldset class="seg"><legend>Mode</legend><label><input type="radio" name="nMode" value="move" checked> Select and move</label><label><input type="radio" name="nMode" value="connect"> Connect</label><label><input type="radio" name="nMode" value="add"> Add nodes</label></fieldset>
+        <button class="btn primary" id="nWatch">Watch PageRank spread</button></div>
+      <div class="pybox">
+        <button class="btn py" id="networkPy">Check it in Python</button>
+        <p class="pystatus" id="networkPyStatus" aria-live="polite"></p>
+        <pre class="code" id="networkPyCode" hidden></pre>
+        <pre class="out" id="networkPyOut" hidden></pre>
+      </div>
+    </div>
+    <aside class="panel">
+      <p class="stop-label"><span class="badge">9</span>Library</p>
+      <h2 id="h-network" tabindex="-1">Who matters in a network?</h2>
+      <p>Degree counts a node’s links. PageRank asks something subtler: a node is important if important nodes link to it. Select a node to see how many hops away everyone else is.</p>
+      <label class="ctl">Network<select id="nPreset"><option value="bridge">Two groups and a bridge</option><option value="friends">Friend circle</option><option value="hub">Hub and spokes</option></select></label>
+      <label class="ctl">Node size shows<select id="nMetric"><option value="pagerank">PageRank</option><option value="degree">Degree</option></select></label>
+      <div class="readout"><div><span>Nodes</span><b id="nNodes">0</b></div><div><span>Edges</span><b id="nEdges">0</b></div><div><span>Highest PageRank</span><b id="nTopPR">–</b></div><div><span>Most links</span><b id="nTopDeg">–</b></div><div class="wide"><span>PageRank iteration</span><b id="nIter">–</b></div></div>
+      <div class="notice"><strong>Try this</strong>In “Two groups and a bridge”, remove the A–F link in Connect mode (click A, then F). Select A and watch the other group become ∞ away.</div>
+    </aside>
+  </section>
+  <nav class="stepper" aria-label="Previous and next lab"><a class="btn" id="prevStop" href="#"></a><a class="btn primary" id="nextStop" href="#"></a></nav>
+</main>
+<footer class="wrap">
+  <p>Built by <a href="https://eldashatro.com">Elda Shatro</a> for students in UIC CS 418, Introduction to Data Science. Everything runs in your browser; no data leaves your device. Source on <a href="https://github.com/eldashatro4/data-science-visualizer">GitHub</a>. Real ridership data comes from the <a href="https://data.cityofchicago.org">City of Chicago Data Portal</a>.</p>
+</footer>
+<script src="js/core.js"></script>
+<script src="js/labs/sampling.js"></script>
+<script src="js/labs/eda.js"></script>
+<script src="js/labs/groupby.js"></script>
+<script src="js/labs/regression.js"></script>
+<script src="js/labs/overfit.js"></script>
+<script src="js/labs/knn.js"></script>
+<script src="js/labs/kmeans.js"></script>
+<script src="js/labs/abtest.js"></script>
+<script src="js/labs/network.js"></script>
+<script>DSV.start();</script>
+</body>
+</html>

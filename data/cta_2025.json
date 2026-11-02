@@ -1,0 +1,1927 @@
+{
+ "year": 2025,
+ "units": "average station entries per day, in thousands",
+ "source": "City of Chicago Data Portal: CTA - Ridership - 'L' Station Entries - Daily Totals (5neh-572f) and CTA - System Information - List of 'L' Stops (8pix-ypme)",
+ "downloaded": "2026-11-01",
+ "stations": [
+  {
+   "id": 41660,
+   "name": "Lake/State",
+   "lines": [
+    "Red"
+   ],
+   "weekday": 10.559,
+   "weekday_days": 255,
+   "sunday": 6.859,
+   "sunday_days": 58,
+   "saturday": 9.707,
+   "saturday_days": 52
+  },
+  {
+   "id": 40380,
+   "name": "Clark/Lake",
+   "lines": [
+    "Blue",
+    "Brown",
+    "Green",
+    "Orange",
+    "Pink",
+    "Purple"
+   ],
+   "saturday": 5.997,
+   "saturday_days": 52,
+   "weekday": 10.303,
+   "weekday_days": 255,
+   "sunday": 4.539,
+   "sunday_days": 58
+  },
+  {
+   "id": 40890,
+   "name": "O'Hare Airport",
+   "lines": [
+    "Blue"
+   ],
+   "sunday": 8.757,
+   "sunday_days": 58,
+   "weekday": 9.367,
+   "weekday_days": 255,
+   "saturday": 8.018,
+   "saturday_days": 52
+  },
+  {
+   "id": 40260,
+   "name": "State/Lake",
+   "lines": [
+    "Brown",
+    "Green",
+    "Orange",
+    "Pink",
+    "Purple"
+   ],
+   "weekday": 7.976,
+   "weekday_days": 255,
+   "saturday": 6.809,
+   "saturday_days": 52,
+   "sunday": 4.815,
+   "sunday_days": 58
+  },
+  {
+   "id": 41220,
+   "name": "Fullerton",
+   "lines": [
+    "Brown",
+    "Purple",
+    "Red"
+   ],
+   "sunday": 4.243,
+   "sunday_days": 58,
+   "saturday": 6.071,
+   "saturday_days": 52,
+   "weekday": 7.791,
+   "weekday_days": 255
+  },
+  {
+   "id": 40370,
+   "name": "Washington/Dearborn",
+   "lines": [
+    "Blue"
+   ],
+   "sunday": 4.395,
+   "sunday_days": 58,
+   "saturday": 5.758,
+   "saturday_days": 52,
+   "weekday": 7.754,
+   "weekday_days": 255
+  },
+  {
+   "id": 41450,
+   "name": "Chicago/State",
+   "lines": [
+    "Red"
+   ],
+   "saturday": 7.165,
+   "saturday_days": 52,
+   "sunday": 5.265,
+   "sunday_days": 58,
+   "weekday": 7.569,
+   "weekday_days": 255
+  },
+  {
+   "id": 41320,
+   "name": "Belmont-North Main",
+   "lines": [
+    "Brown",
+    "Purple",
+    "Red"
+   ],
+   "sunday": 5.204,
+   "sunday_days": 58,
+   "weekday": 7.047,
+   "weekday_days": 255,
+   "saturday": 7.015,
+   "saturday_days": 52
+  },
+  {
+   "id": 41700,
+   "name": "Washington/Wabash",
+   "lines": [
+    "Brown",
+    "Green",
+    "Orange",
+    "Pink",
+    "Purple"
+   ],
+   "saturday": 5.259,
+   "saturday_days": 52,
+   "sunday": 3.701,
+   "sunday_days": 58,
+   "weekday": 6.93,
+   "weekday_days": 255
+  },
+  {
+   "id": 41400,
+   "name": "Roosevelt",
+   "lines": [
+    "Green",
+    "Orange",
+    "Red"
+   ],
+   "saturday": 7.002,
+   "saturday_days": 52,
+   "weekday": 6.833,
+   "weekday_days": 255,
+   "sunday": 5.707,
+   "sunday_days": 58
+  },
+  {
+   "id": 40330,
+   "name": "Grand/State",
+   "lines": [
+    "Red"
+   ],
+   "saturday": 8.068,
+   "saturday_days": 52,
+   "sunday": 5.817,
+   "sunday_days": 58,
+   "weekday": 6.001,
+   "weekday_days": 255
+  },
+  {
+   "id": 40450,
+   "name": "95th/Dan Ryan",
+   "lines": [
+    "Red"
+   ],
+   "weekday": 5.577,
+   "weekday_days": 255,
+   "saturday": 3.85,
+   "saturday_days": 52,
+   "sunday": 3.163,
+   "sunday_days": 58
+  },
+  {
+   "id": 41420,
+   "name": "Addison-North Main",
+   "lines": [
+    "Red"
+   ],
+   "sunday": 5.392,
+   "sunday_days": 58,
+   "saturday": 7.194,
+   "saturday_days": 52,
+   "weekday": 5.505,
+   "weekday_days": 255
+  },
+  {
+   "id": 40040,
+   "name": "Quincy/Wells",
+   "lines": [
+    "Brown",
+    "Orange",
+    "Pink",
+    "Purple"
+   ],
+   "saturday": 1.508,
+   "saturday_days": 52,
+   "sunday": 1.22,
+   "sunday_days": 58,
+   "weekday": 5.313,
+   "weekday_days": 255
+  },
+  {
+   "id": 40730,
+   "name": "Washington/Wells",
+   "lines": [
+    "Brown",
+    "Orange",
+    "Pink",
+    "Purple"
+   ],
+   "sunday": 0.803,
+   "sunday_days": 58,
+   "saturday": 1.143,
+   "saturday_days": 52,
+   "weekday": 5.283,
+   "weekday_days": 255
+  },
+  {
+   "id": 40930,
+   "name": "Midway Airport",
+   "lines": [
+    "Orange"
+   ],
+   "saturday": 3.02,
+   "saturday_days": 52,
+   "sunday": 2.429,
+   "sunday_days": 58,
+   "weekday": 5.178,
+   "weekday_days": 255
+  },
+  {
+   "id": 40540,
+   "name": "Wilson",
+   "lines": [
+    "Purple",
+    "Red"
+   ],
+   "sunday": 2.873,
+   "sunday_days": 58,
+   "saturday": 3.965,
+   "saturday_days": 52,
+   "weekday": 5.017,
+   "weekday_days": 255
+  },
+  {
+   "id": 40630,
+   "name": "Clark/Division",
+   "lines": [
+    "Red"
+   ],
+   "weekday": 4.939,
+   "weekday_days": 255,
+   "saturday": 5.06,
+   "saturday_days": 52,
+   "sunday": 3.648,
+   "sunday_days": 58
+  },
+  {
+   "id": 40680,
+   "name": "Adams/Wabash",
+   "lines": [
+    "Brown",
+    "Green",
+    "Orange",
+    "Pink",
+    "Purple"
+   ],
+   "sunday": 2.161,
+   "sunday_days": 58,
+   "weekday": 4.633,
+   "weekday_days": 255,
+   "saturday": 2.875,
+   "saturday_days": 52
+  },
+  {
+   "id": 41020,
+   "name": "Logan Square",
+   "lines": [
+    "Blue"
+   ],
+   "weekday": 4.576,
+   "weekday_days": 255,
+   "sunday": 2.681,
+   "sunday_days": 58,
+   "saturday": 3.511,
+   "saturday_days": 52
+  },
+  {
+   "id": 40460,
+   "name": "Merchandise Mart",
+   "lines": [
+    "Brown",
+    "Purple"
+   ],
+   "sunday": 1.242,
+   "sunday_days": 58,
+   "weekday": 4.519,
+   "weekday_days": 255,
+   "saturday": 2.007,
+   "saturday_days": 52
+  },
+  {
+   "id": 41280,
+   "name": "Jefferson Park",
+   "lines": [
+    "Blue"
+   ],
+   "saturday": 3.009,
+   "saturday_days": 52,
+   "sunday": 2.32,
+   "sunday_days": 58,
+   "weekday": 4.517,
+   "weekday_days": 255
+  },
+  {
+   "id": 40560,
+   "name": "Jackson/State",
+   "lines": [
+    "Red"
+   ],
+   "saturday": 2.884,
+   "saturday_days": 52,
+   "sunday": 2.219,
+   "sunday_days": 58,
+   "weekday": 4.298,
+   "weekday_days": 255
+  },
+  {
+   "id": 40710,
+   "name": "Chicago/Franklin",
+   "lines": [
+    "Brown",
+    "Purple"
+   ],
+   "saturday": 2.92,
+   "saturday_days": 52,
+   "sunday": 1.892,
+   "sunday_days": 58,
+   "weekday": 4.206,
+   "weekday_days": 255
+  },
+  {
+   "id": 41000,
+   "name": "Cermak-Chinatown",
+   "lines": [
+    "Red"
+   ],
+   "sunday": 5.113,
+   "sunday_days": 58,
+   "saturday": 6.404,
+   "saturday_days": 52,
+   "weekday": 4.126,
+   "weekday_days": 255
+  },
+  {
+   "id": 40070,
+   "name": "Jackson/Dearborn",
+   "lines": [
+    "Blue"
+   ],
+   "sunday": 2.097,
+   "sunday_days": 58,
+   "saturday": 2.571,
+   "saturday_days": 52,
+   "weekday": 4.099,
+   "weekday_days": 255
+  },
+  {
+   "id": 41090,
+   "name": "Monroe/State",
+   "lines": [
+    "Red"
+   ],
+   "saturday": 2.999,
+   "saturday_days": 52,
+   "sunday": 2.138,
+   "sunday_days": 58,
+   "weekday": 4.08,
+   "weekday_days": 255
+  },
+  {
+   "id": 40590,
+   "name": "Damen/Milwaukee",
+   "lines": [
+    "Blue"
+   ],
+   "weekday": 4.058,
+   "weekday_days": 255,
+   "sunday": 2.895,
+   "sunday_days": 58,
+   "saturday": 4.006,
+   "saturday_days": 52
+  },
+  {
+   "id": 40320,
+   "name": "Division/Milwaukee",
+   "lines": [
+    "Blue"
+   ],
+   "sunday": 2.198,
+   "sunday_days": 58,
+   "saturday": 3.055,
+   "saturday_days": 52,
+   "weekday": 3.932,
+   "weekday_days": 255
+  },
+  {
+   "id": 40350,
+   "name": "UIC-Halsted",
+   "lines": [
+    "Blue"
+   ],
+   "saturday": 1.742,
+   "saturday_days": 52,
+   "weekday": 3.928,
+   "weekday_days": 255,
+   "sunday": 1.377,
+   "sunday_days": 58
+  },
+  {
+   "id": 40790,
+   "name": "Monroe/Dearborn",
+   "lines": [
+    "Blue"
+   ],
+   "sunday": 1.209,
+   "sunday_days": 58,
+   "weekday": 3.862,
+   "weekday_days": 255,
+   "saturday": 1.462,
+   "saturday_days": 52
+  },
+  {
+   "id": 41510,
+   "name": "Morgan-Lake",
+   "lines": [
+    "Green",
+    "Pink"
+   ],
+   "saturday": 3.594,
+   "saturday_days": 52,
+   "sunday": 2.587,
+   "sunday_days": 58,
+   "weekday": 3.8,
+   "weekday_days": 255
+  },
+  {
+   "id": 40820,
+   "name": "Rosemont",
+   "lines": [
+    "Blue"
+   ],
+   "saturday": 3.018,
+   "saturday_days": 52,
+   "weekday": 3.774,
+   "weekday_days": 255,
+   "sunday": 2.308,
+   "sunday_days": 58
+  },
+  {
+   "id": 40240,
+   "name": "79th",
+   "lines": [
+    "Red"
+   ],
+   "sunday": 2.38,
+   "sunday_days": 58,
+   "weekday": 3.74,
+   "weekday_days": 255,
+   "saturday": 2.857,
+   "saturday_days": 52
+  },
+  {
+   "id": 40670,
+   "name": "Western/Milwaukee",
+   "lines": [
+    "Blue"
+   ],
+   "saturday": 2.469,
+   "saturday_days": 52,
+   "sunday": 1.784,
+   "sunday_days": 58,
+   "weekday": 3.474,
+   "weekday_days": 255
+  },
+  {
+   "id": 40570,
+   "name": "California/Milwaukee",
+   "lines": [
+    "Blue"
+   ],
+   "weekday": 3.444,
+   "weekday_days": 255,
+   "saturday": 2.673,
+   "saturday_days": 52,
+   "sunday": 1.875,
+   "sunday_days": 58
+  },
+  {
+   "id": 40060,
+   "name": "Belmont-O'Hare",
+   "lines": [
+    "Blue"
+   ],
+   "sunday": 1.75,
+   "sunday_days": 58,
+   "weekday": 3.435,
+   "weekday_days": 255,
+   "saturday": 2.302,
+   "saturday_days": 52
+  },
+  {
+   "id": 40530,
+   "name": "Diversey",
+   "lines": [
+    "Brown",
+    "Purple"
+   ],
+   "sunday": 1.531,
+   "sunday_days": 58,
+   "weekday": 3.341,
+   "weekday_days": 255,
+   "saturday": 2.306,
+   "saturday_days": 52
+  },
+  {
+   "id": 41300,
+   "name": "Loyola",
+   "lines": [
+    "Red"
+   ],
+   "saturday": 2.927,
+   "saturday_days": 52,
+   "sunday": 2.041,
+   "sunday_days": 58,
+   "weekday": 3.253,
+   "weekday_days": 255
+  },
+  {
+   "id": 40960,
+   "name": "Pulaski-Orange",
+   "lines": [
+    "Orange"
+   ],
+   "sunday": 1.149,
+   "sunday_days": 58,
+   "weekday": 3.228,
+   "weekday_days": 255,
+   "saturday": 1.553,
+   "saturday_days": 52
+  },
+  {
+   "id": 40900,
+   "name": "Howard",
+   "lines": [
+    "Purple",
+    "Red",
+    "Yellow"
+   ],
+   "sunday": 1.997,
+   "sunday_days": 58,
+   "saturday": 2.525,
+   "saturday_days": 52,
+   "weekday": 3.202,
+   "weekday_days": 255
+  },
+  {
+   "id": 40650,
+   "name": "North/Clybourn",
+   "lines": [
+    "Red"
+   ],
+   "weekday": 3.132,
+   "weekday_days": 255,
+   "saturday": 3.166,
+   "saturday_days": 52,
+   "sunday": 2.329,
+   "sunday_days": 58
+  },
+  {
+   "id": 40190,
+   "name": "Sox-35th-Dan Ryan",
+   "lines": [
+    "Red"
+   ],
+   "sunday": 2.123,
+   "sunday_days": 58,
+   "weekday": 3.042,
+   "weekday_days": 255,
+   "saturday": 2.964,
+   "saturday_days": 52
+  },
+  {
+   "id": 40660,
+   "name": "Armitage",
+   "lines": [
+    "Brown",
+    "Purple"
+   ],
+   "weekday": 2.912,
+   "weekday_days": 255,
+   "saturday": 2.371,
+   "saturday_days": 52,
+   "sunday": 1.452,
+   "sunday_days": 58
+  },
+  {
+   "id": 41160,
+   "name": "Clinton-Lake",
+   "lines": [
+    "Green",
+    "Pink"
+   ],
+   "saturday": 1.463,
+   "saturday_days": 52,
+   "weekday": 2.911,
+   "weekday_days": 255,
+   "sunday": 1.095,
+   "sunday_days": 58
+  },
+  {
+   "id": 40550,
+   "name": "Irving Park-O'Hare",
+   "lines": [
+    "Blue"
+   ],
+   "saturday": 1.823,
+   "saturday_days": 52,
+   "weekday": 2.74,
+   "weekday_days": 255,
+   "sunday": 1.43,
+   "sunday_days": 58
+  },
+  {
+   "id": 40990,
+   "name": "69th",
+   "lines": [
+    "Red"
+   ],
+   "sunday": 1.64,
+   "sunday_days": 58,
+   "saturday": 2.114,
+   "saturday_days": 52,
+   "weekday": 2.677,
+   "weekday_days": 255
+  },
+  {
+   "id": 40080,
+   "name": "Sheridan",
+   "lines": [
+    "Red"
+   ],
+   "weekday": 2.624,
+   "weekday_days": 255,
+   "sunday": 1.716,
+   "sunday_days": 58,
+   "saturday": 2.308,
+   "saturday_days": 52
+  },
+  {
+   "id": 40800,
+   "name": "Sedgwick",
+   "lines": [
+    "Brown",
+    "Purple"
+   ],
+   "sunday": 1.417,
+   "sunday_days": 58,
+   "weekday": 2.582,
+   "weekday_days": 255,
+   "saturday": 2.146,
+   "saturday_days": 52
+  },
+  {
+   "id": 40100,
+   "name": "Morse",
+   "lines": [
+    "Red"
+   ],
+   "weekday": 2.566,
+   "weekday_days": 255,
+   "sunday": 1.753,
+   "sunday_days": 58,
+   "saturday": 2.219,
+   "saturday_days": 52
+  },
+  {
+   "id": 41410,
+   "name": "Chicago/Milwaukee",
+   "lines": [
+    "Blue"
+   ],
+   "weekday": 2.533,
+   "weekday_days": 255,
+   "saturday": 1.841,
+   "saturday_days": 52,
+   "sunday": 1.414,
+   "sunday_days": 58
+  },
+  {
+   "id": 41290,
+   "name": "Kimball",
+   "lines": [
+    "Brown"
+   ],
+   "weekday": 2.533,
+   "weekday_days": 255,
+   "sunday": 1.498,
+   "sunday_days": 58,
+   "saturday": 1.974,
+   "saturday_days": 52
+  },
+  {
+   "id": 40310,
+   "name": "Western-Orange",
+   "lines": [
+    "Orange"
+   ],
+   "sunday": 1.013,
+   "sunday_days": 58,
+   "saturday": 1.36,
+   "saturday_days": 52,
+   "weekday": 2.477,
+   "weekday_days": 255
+  },
+  {
+   "id": 40490,
+   "name": "Grand/Milwaukee",
+   "lines": [
+    "Blue"
+   ],
+   "sunday": 1.595,
+   "sunday_days": 58,
+   "saturday": 1.983,
+   "saturday_days": 52,
+   "weekday": 2.461,
+   "weekday_days": 255
+  },
+  {
+   "id": 40850,
+   "name": "Library",
+   "lines": [
+    "Brown",
+    "Orange",
+    "Pink",
+    "Purple"
+   ],
+   "sunday": 1.232,
+   "sunday_days": 58,
+   "weekday": 2.451,
+   "weekday_days": 255,
+   "saturday": 1.693,
+   "saturday_days": 52
+  },
+  {
+   "id": 41030,
+   "name": "Polk",
+   "lines": [
+    "Pink"
+   ],
+   "saturday": 0.697,
+   "saturday_days": 52,
+   "sunday": 0.514,
+   "sunday_days": 58,
+   "weekday": 2.409,
+   "weekday_days": 255
+  },
+  {
+   "id": 41200,
+   "name": "Argyle",
+   "lines": [
+    "Red"
+   ],
+   "sunday": 1.678,
+   "sunday_days": 58,
+   "weekday": 2.397,
+   "weekday_days": 255,
+   "saturday": 2.271,
+   "saturday_days": 52
+  },
+  {
+   "id": 41490,
+   "name": "Harrison",
+   "lines": [
+    "Red"
+   ],
+   "weekday": 2.326,
+   "weekday_days": 255,
+   "saturday": 2.647,
+   "saturday_days": 52,
+   "sunday": 2.009,
+   "sunday_days": 58
+  },
+  {
+   "id": 40760,
+   "name": "Granville",
+   "lines": [
+    "Red"
+   ],
+   "sunday": 1.541,
+   "sunday_days": 58,
+   "saturday": 2.151,
+   "saturday_days": 52,
+   "weekday": 2.297,
+   "weekday_days": 255
+  },
+  {
+   "id": 41150,
+   "name": "Kedzie-Midway",
+   "lines": [
+    "Orange"
+   ],
+   "weekday": 2.273,
+   "weekday_days": 255,
+   "sunday": 0.933,
+   "sunday_days": 58,
+   "saturday": 1.277,
+   "saturday_days": 52
+  },
+  {
+   "id": 40230,
+   "name": "Cumberland",
+   "lines": [
+    "Blue"
+   ],
+   "weekday": 2.26,
+   "weekday_days": 255,
+   "saturday": 1.473,
+   "saturday_days": 52,
+   "sunday": 1.12,
+   "sunday_days": 58
+  },
+  {
+   "id": 40360,
+   "name": "Southport",
+   "lines": [
+    "Brown"
+   ],
+   "weekday": 2.194,
+   "weekday_days": 255,
+   "sunday": 1.406,
+   "sunday_days": 58,
+   "saturday": 2.127,
+   "saturday_days": 52
+  },
+  {
+   "id": 40020,
+   "name": "Harlem-Lake",
+   "lines": [
+    "Green"
+   ],
+   "sunday": 1.16,
+   "sunday_days": 58,
+   "saturday": 1.599,
+   "saturday_days": 52,
+   "weekday": 2.173,
+   "weekday_days": 255
+  },
+  {
+   "id": 40430,
+   "name": "Clinton-Forest Park",
+   "lines": [
+    "Blue"
+   ],
+   "saturday": 1.036,
+   "saturday_days": 52,
+   "weekday": 2.164,
+   "weekday_days": 255,
+   "sunday": 0.929,
+   "sunday_days": 58
+  },
+  {
+   "id": 41170,
+   "name": "Garfield-Dan Ryan",
+   "lines": [
+    "Red"
+   ],
+   "weekday": 2.141,
+   "weekday_days": 255,
+   "sunday": 1.253,
+   "sunday_days": 58,
+   "saturday": 1.729,
+   "saturday_days": 52
+  },
+  {
+   "id": 41430,
+   "name": "87th",
+   "lines": [
+    "Red"
+   ],
+   "sunday": 1.248,
+   "sunday_days": 58,
+   "weekday": 2.107,
+   "weekday_days": 255,
+   "saturday": 1.533,
+   "saturday_days": 52
+  },
+  {
+   "id": 41480,
+   "name": "Western-Brown",
+   "lines": [
+    "Brown"
+   ],
+   "saturday": 1.739,
+   "saturday_days": 52,
+   "weekday": 1.978,
+   "weekday_days": 255,
+   "sunday": 1.158,
+   "sunday_days": 58
+  },
+  {
+   "id": 40160,
+   "name": "LaSalle/Van Buren",
+   "lines": [
+    "Brown",
+    "Orange",
+    "Pink",
+    "Purple"
+   ],
+   "sunday": 0.429,
+   "sunday_days": 58,
+   "weekday": 1.94,
+   "weekday_days": 255,
+   "saturday": 0.621,
+   "saturday_days": 52
+  },
+  {
+   "id": 41210,
+   "name": "Wellington",
+   "lines": [
+    "Brown",
+    "Purple"
+   ],
+   "sunday": 0.769,
+   "sunday_days": 58,
+   "weekday": 1.938,
+   "weekday_days": 255,
+   "saturday": 1.187,
+   "saturday_days": 52
+  },
+  {
+   "id": 41380,
+   "name": "Bryn Mawr",
+   "lines": [
+    "Red"
+   ],
+   "saturday": 1.668,
+   "saturday_days": 52,
+   "sunday": 1.298,
+   "sunday_days": 58,
+   "weekday": 1.922,
+   "weekday_days": 255
+  },
+  {
+   "id": 41230,
+   "name": "47th-Dan Ryan",
+   "lines": [
+    "Red"
+   ],
+   "saturday": 1.488,
+   "saturday_days": 52,
+   "weekday": 1.913,
+   "weekday_days": 255,
+   "sunday": 1.166,
+   "sunday_days": 58
+  },
+  {
+   "id": 40050,
+   "name": "Davis",
+   "lines": [
+    "Purple"
+   ],
+   "sunday": 1.12,
+   "sunday_days": 58,
+   "saturday": 1.567,
+   "saturday_days": 52,
+   "weekday": 1.879,
+   "weekday_days": 255
+  },
+  {
+   "id": 41240,
+   "name": "Addison-O'Hare",
+   "lines": [
+    "Blue"
+   ],
+   "saturday": 1.11,
+   "saturday_days": 52,
+   "sunday": 0.833,
+   "sunday_days": 58,
+   "weekday": 1.819,
+   "weekday_days": 255
+  },
+  {
+   "id": 40120,
+   "name": "35th/Archer",
+   "lines": [
+    "Orange"
+   ],
+   "sunday": 0.756,
+   "sunday_days": 58,
+   "weekday": 1.804,
+   "weekday_days": 255,
+   "saturday": 1.037,
+   "saturday_days": 52
+  },
+  {
+   "id": 41340,
+   "name": "LaSalle",
+   "lines": [
+    "Blue"
+   ],
+   "sunday": 0.831,
+   "sunday_days": 58,
+   "weekday": 1.792,
+   "weekday_days": 255,
+   "saturday": 1.042,
+   "saturday_days": 52
+  },
+  {
+   "id": 40170,
+   "name": "Ashland-Lake",
+   "lines": [
+    "Green",
+    "Pink"
+   ],
+   "sunday": 0.923,
+   "sunday_days": 58,
+   "saturday": 1.336,
+   "saturday_days": 52,
+   "weekday": 1.786,
+   "weekday_days": 255
+  },
+  {
+   "id": 40880,
+   "name": "Thorndale",
+   "lines": [
+    "Red"
+   ],
+   "saturday": 1.472,
+   "saturday_days": 52,
+   "sunday": 1.117,
+   "sunday_days": 58,
+   "weekday": 1.769,
+   "weekday_days": 255
+  },
+  {
+   "id": 40910,
+   "name": "63rd-Dan Ryan",
+   "lines": [
+    "Red"
+   ],
+   "sunday": 1.127,
+   "sunday_days": 58,
+   "weekday": 1.744,
+   "weekday_days": 255,
+   "saturday": 1.28,
+   "saturday_days": 52
+  },
+  {
+   "id": 41130,
+   "name": "Halsted-Orange",
+   "lines": [
+    "Orange"
+   ],
+   "weekday": 1.726,
+   "weekday_days": 255,
+   "sunday": 0.756,
+   "sunday_days": 58,
+   "saturday": 0.976,
+   "saturday_days": 52
+  },
+  {
+   "id": 41460,
+   "name": "Irving Park-Brown",
+   "lines": [
+    "Brown"
+   ],
+   "weekday": 1.692,
+   "weekday_days": 255,
+   "saturday": 1.27,
+   "saturday_days": 52,
+   "sunday": 0.811,
+   "sunday_days": 58
+  },
+  {
+   "id": 41330,
+   "name": "Montrose-O'Hare",
+   "lines": [
+    "Blue"
+   ],
+   "saturday": 1.041,
+   "saturday_days": 52,
+   "sunday": 0.781,
+   "sunday_days": 58,
+   "weekday": 1.683,
+   "weekday_days": 255
+  },
+  {
+   "id": 41310,
+   "name": "Paulina",
+   "lines": [
+    "Brown"
+   ],
+   "saturday": 1.281,
+   "saturday_days": 52,
+   "sunday": 0.811,
+   "sunday_days": 58,
+   "weekday": 1.681,
+   "weekday_days": 255
+  },
+  {
+   "id": 40580,
+   "name": "54th/Cermak",
+   "lines": [
+    "Pink"
+   ],
+   "saturday": 1.003,
+   "saturday_days": 52,
+   "sunday": 0.749,
+   "sunday_days": 58,
+   "weekday": 1.594,
+   "weekday_days": 255
+  },
+  {
+   "id": 40750,
+   "name": "Harlem-O'Hare",
+   "lines": [
+    "Blue"
+   ],
+   "sunday": 0.665,
+   "sunday_days": 58,
+   "saturday": 0.905,
+   "saturday_days": 52,
+   "weekday": 1.585,
+   "weekday_days": 255
+  },
+  {
+   "id": 40090,
+   "name": "Damen-Brown",
+   "lines": [
+    "Brown"
+   ],
+   "sunday": 0.809,
+   "sunday_days": 58,
+   "weekday": 1.579,
+   "weekday_days": 255,
+   "saturday": 1.211,
+   "saturday_days": 52
+  },
+  {
+   "id": 41690,
+   "name": "Cermak-McCormick Place",
+   "lines": [
+    "Green"
+   ],
+   "saturday": 1.518,
+   "saturday_days": 52,
+   "sunday": 1.261,
+   "sunday_days": 58,
+   "weekday": 1.572,
+   "weekday_days": 255
+  },
+  {
+   "id": 40810,
+   "name": "Medical Center",
+   "lines": [
+    "Blue"
+   ],
+   "saturday": 0.695,
+   "saturday_days": 52,
+   "weekday": 1.481,
+   "weekday_days": 255,
+   "sunday": 0.538,
+   "sunday_days": 58
+  },
+  {
+   "id": 41500,
+   "name": "Montrose-Brown",
+   "lines": [
+    "Brown"
+   ],
+   "saturday": 1.158,
+   "saturday_days": 52,
+   "weekday": 1.415,
+   "weekday_days": 255,
+   "sunday": 0.778,
+   "sunday_days": 58
+  },
+  {
+   "id": 40830,
+   "name": "18th",
+   "lines": [
+    "Pink"
+   ],
+   "sunday": 0.851,
+   "sunday_days": 58,
+   "saturday": 1.147,
+   "saturday_days": 52,
+   "weekday": 1.311,
+   "weekday_days": 255
+  },
+  {
+   "id": 41440,
+   "name": "Addison-Brown",
+   "lines": [
+    "Brown"
+   ],
+   "sunday": 0.596,
+   "sunday_days": 58,
+   "saturday": 0.841,
+   "saturday_days": 52,
+   "weekday": 1.29,
+   "weekday_days": 255
+  },
+  {
+   "id": 41180,
+   "name": "Kedzie-Brown",
+   "lines": [
+    "Brown"
+   ],
+   "saturday": 1.076,
+   "saturday_days": 52,
+   "sunday": 0.792,
+   "sunday_days": 58,
+   "weekday": 1.287,
+   "weekday_days": 255
+  },
+  {
+   "id": 41120,
+   "name": "35-Bronzeville-IIT",
+   "lines": [
+    "Green"
+   ],
+   "weekday": 1.23,
+   "weekday_days": 255,
+   "sunday": 0.635,
+   "sunday_days": 58,
+   "saturday": 0.853,
+   "saturday_days": 52
+  },
+  {
+   "id": 40280,
+   "name": "Central-Lake",
+   "lines": [
+    "Green"
+   ],
+   "weekday": 1.211,
+   "weekday_days": 255,
+   "sunday": 0.641,
+   "sunday_days": 58,
+   "saturday": 0.852,
+   "saturday_days": 52
+  },
+  {
+   "id": 40390,
+   "name": "Forest Park",
+   "lines": [
+    "Blue"
+   ],
+   "sunday": 0.537,
+   "sunday_days": 58,
+   "saturday": 0.668,
+   "saturday_days": 52,
+   "weekday": 1.198,
+   "weekday_days": 255
+  },
+  {
+   "id": 40210,
+   "name": "Damen-Cermak",
+   "lines": [
+    "Pink"
+   ],
+   "sunday": 0.628,
+   "sunday_days": 58,
+   "weekday": 1.179,
+   "weekday_days": 255,
+   "saturday": 0.828,
+   "saturday_days": 52
+  },
+  {
+   "id": 41060,
+   "name": "Ashland-Orange",
+   "lines": [
+    "Orange"
+   ],
+   "weekday": 1.163,
+   "weekday_days": 255,
+   "sunday": 0.521,
+   "sunday_days": 58,
+   "saturday": 0.718,
+   "saturday_days": 52
+  },
+  {
+   "id": 41190,
+   "name": "Jarvis",
+   "lines": [
+    "Red"
+   ],
+   "weekday": 1.022,
+   "weekday_days": 255,
+   "sunday": 0.708,
+   "sunday_days": 58,
+   "saturday": 0.925,
+   "saturday_days": 52
+  },
+  {
+   "id": 40440,
+   "name": "California-Cermak",
+   "lines": [
+    "Pink"
+   ],
+   "sunday": 0.562,
+   "sunday_days": 58,
+   "saturday": 0.773,
+   "saturday_days": 52,
+   "weekday": 1.022,
+   "weekday_days": 255
+  },
+  {
+   "id": 41010,
+   "name": "Rockwell",
+   "lines": [
+    "Brown"
+   ],
+   "saturday": 0.733,
+   "saturday_days": 52,
+   "weekday": 1.014,
+   "weekday_days": 255,
+   "sunday": 0.482,
+   "sunday_days": 58
+  },
+  {
+   "id": 41260,
+   "name": "Austin-Lake",
+   "lines": [
+    "Green"
+   ],
+   "saturday": 0.595,
+   "saturday_days": 52,
+   "weekday": 0.972,
+   "weekday_days": 255,
+   "sunday": 0.445,
+   "sunday_days": 58
+  },
+  {
+   "id": 41710,
+   "name": "Damen-Lake",
+   "lines": [
+    "Green"
+   ],
+   "saturday": 0.743,
+   "saturday_days": 52,
+   "sunday": 0.542,
+   "sunday_days": 58,
+   "weekday": 0.943,
+   "weekday_days": 255
+  },
+  {
+   "id": 40870,
+   "name": "Francisco",
+   "lines": [
+    "Brown"
+   ],
+   "saturday": 0.66,
+   "saturday_days": 52,
+   "weekday": 0.934,
+   "weekday_days": 255,
+   "sunday": 0.477,
+   "sunday_days": 58
+  },
+  {
+   "id": 40030,
+   "name": "Pulaski-Lake",
+   "lines": [
+    "Green"
+   ],
+   "weekday": 0.899,
+   "weekday_days": 255,
+   "sunday": 0.506,
+   "sunday_days": 58,
+   "saturday": 0.652,
+   "saturday_days": 52
+  },
+  {
+   "id": 40140,
+   "name": "Dempster-Skokie",
+   "lines": [
+    "Yellow"
+   ],
+   "weekday": 0.898,
+   "weekday_days": 255,
+   "sunday": 0.549,
+   "sunday_days": 58,
+   "saturday": 0.678,
+   "saturday_days": 52
+  },
+  {
+   "id": 40510,
+   "name": "Garfield-South Elevated",
+   "lines": [
+    "Green"
+   ],
+   "saturday": 0.646,
+   "saturday_days": 52,
+   "sunday": 0.497,
+   "sunday_days": 58,
+   "weekday": 0.849,
+   "weekday_days": 255
+  },
+  {
+   "id": 41350,
+   "name": "Oak Park-Lake",
+   "lines": [
+    "Green"
+   ],
+   "saturday": 0.579,
+   "saturday_days": 52,
+   "sunday": 0.404,
+   "sunday_days": 58,
+   "weekday": 0.848,
+   "weekday_days": 255
+  },
+  {
+   "id": 40740,
+   "name": "Western-Cermak",
+   "lines": [
+    "Pink"
+   ],
+   "weekday": 0.846,
+   "weekday_days": 255,
+   "sunday": 0.442,
+   "sunday_days": 58,
+   "saturday": 0.632,
+   "saturday_days": 52
+  },
+  {
+   "id": 40770,
+   "name": "Lawrence",
+   "lines": [
+    "Red"
+   ],
+   "weekday": 0.835,
+   "weekday_days": 255,
+   "sunday": 0.649,
+   "sunday_days": 58,
+   "saturday": 0.852,
+   "saturday_days": 52
+  },
+  {
+   "id": 40250,
+   "name": "Kedzie-Homan-Forest Park",
+   "lines": [
+    "Blue"
+   ],
+   "sunday": 0.471,
+   "sunday_days": 58,
+   "saturday": 0.567,
+   "saturday_days": 52,
+   "weekday": 0.834,
+   "weekday_days": 255
+  },
+  {
+   "id": 40340,
+   "name": "Berwyn",
+   "lines": [
+    "Red"
+   ],
+   "sunday": 0.596,
+   "sunday_days": 58,
+   "weekday": 0.805,
+   "weekday_days": 255,
+   "saturday": 0.729,
+   "saturday_days": 52
+  },
+  {
+   "id": 41040,
+   "name": "Kedzie-Cermak",
+   "lines": [
+    "Pink"
+   ],
+   "sunday": 0.492,
+   "sunday_days": 58,
+   "weekday": 0.793,
+   "weekday_days": 255,
+   "saturday": 0.654,
+   "saturday_days": 52
+  },
+  {
+   "id": 40420,
+   "name": "Cicero-Cermak",
+   "lines": [
+    "Pink"
+   ],
+   "sunday": 0.452,
+   "sunday_days": 58,
+   "saturday": 0.62,
+   "saturday_days": 52,
+   "weekday": 0.784,
+   "weekday_days": 255
+  },
+  {
+   "id": 40610,
+   "name": "Ridgeland",
+   "lines": [
+    "Green"
+   ],
+   "sunday": 0.265,
+   "sunday_days": 58,
+   "weekday": 0.781,
+   "weekday_days": 255,
+   "saturday": 0.404,
+   "saturday_days": 52
+  },
+  {
+   "id": 41360,
+   "name": "California-Lake",
+   "lines": [
+    "Green"
+   ],
+   "sunday": 0.35,
+   "sunday_days": 58,
+   "weekday": 0.771,
+   "weekday_days": 255,
+   "saturday": 0.445,
+   "saturday_days": 52
+  },
+  {
+   "id": 40780,
+   "name": "Central Park",
+   "lines": [
+    "Pink"
+   ],
+   "saturday": 0.499,
+   "saturday_days": 52,
+   "sunday": 0.377,
+   "sunday_days": 58,
+   "weekday": 0.753,
+   "weekday_days": 255
+  },
+  {
+   "id": 40470,
+   "name": "Racine",
+   "lines": [
+    "Blue"
+   ],
+   "sunday": 0.295,
+   "sunday_days": 58,
+   "weekday": 0.752,
+   "weekday_days": 255,
+   "saturday": 0.361,
+   "saturday_days": 52
+  },
+  {
+   "id": 40480,
+   "name": "Cicero-Lake",
+   "lines": [
+    "Green"
+   ],
+   "sunday": 0.427,
+   "sunday_days": 58,
+   "saturday": 0.555,
+   "saturday_days": 52,
+   "weekday": 0.739,
+   "weekday_days": 255
+  },
+  {
+   "id": 41070,
+   "name": "Kedzie-Lake",
+   "lines": [
+    "Green"
+   ],
+   "sunday": 0.356,
+   "sunday_days": 58,
+   "weekday": 0.732,
+   "weekday_days": 255,
+   "saturday": 0.474,
+   "saturday_days": 52
+  },
+  {
+   "id": 40720,
+   "name": "East 63rd-Cottage Grove",
+   "lines": [
+    "Green"
+   ],
+   "weekday": 0.725,
+   "weekday_days": 255,
+   "sunday": 0.425,
+   "sunday_days": 58,
+   "saturday": 0.541,
+   "saturday_days": 52
+  },
+  {
+   "id": 40150,
+   "name": "Pulaski-Cermak",
+   "lines": [
+    "Pink"
+   ],
+   "weekday": 0.718,
+   "weekday_days": 255,
+   "saturday": 0.51,
+   "saturday_days": 52,
+   "sunday": 0.397,
+   "sunday_days": 58
+  },
+  {
+   "id": 40290,
+   "name": "Ashland/63rd",
+   "lines": [
+    "Green"
+   ],
+   "sunday": 0.401,
+   "sunday_days": 58,
+   "weekday": 0.705,
+   "weekday_days": 255,
+   "saturday": 0.462,
+   "saturday_days": 52
+  },
+  {
+   "id": 41080,
+   "name": "47th-South Elevated",
+   "lines": [
+    "Green"
+   ],
+   "saturday": 0.53,
+   "saturday_days": 52,
+   "sunday": 0.376,
+   "sunday_days": 58,
+   "weekday": 0.702,
+   "weekday_days": 255
+  },
+  {
+   "id": 40010,
+   "name": "Austin-Forest Park",
+   "lines": [
+    "Blue"
+   ],
+   "saturday": 0.346,
+   "saturday_days": 52,
+   "weekday": 0.699,
+   "weekday_days": 255,
+   "sunday": 0.268,
+   "sunday_days": 58
+  },
+  {
+   "id": 41270,
+   "name": "43rd",
+   "lines": [
+    "Green"
+   ],
+   "saturday": 0.434,
+   "saturday_days": 52,
+   "weekday": 0.679,
+   "weekday_days": 255,
+   "sunday": 0.341,
+   "sunday_days": 58
+  },
+  {
+   "id": 40270,
+   "name": "Main",
+   "lines": [
+    "Purple"
+   ],
+   "weekday": 0.647,
+   "weekday_days": 255,
+   "sunday": 0.373,
+   "sunday_days": 58,
+   "saturday": 0.548,
+   "saturday_days": 52
+  },
+  {
+   "id": 40700,
+   "name": "Laramie",
+   "lines": [
+    "Green"
+   ],
+   "saturday": 0.413,
+   "saturday_days": 52,
+   "sunday": 0.32,
+   "sunday_days": 58,
+   "weekday": 0.63,
+   "weekday_days": 255
+  },
+  {
+   "id": 40130,
+   "name": "51st",
+   "lines": [
+    "Green"
+   ],
+   "sunday": 0.366,
+   "sunday_days": 58,
+   "saturday": 0.489,
+   "saturday_days": 52,
+   "weekday": 0.626,
+   "weekday_days": 255
+  },
+  {
+   "id": 40920,
+   "name": "Pulaski-Forest Park",
+   "lines": [
+    "Blue"
+   ],
+   "weekday": 0.615,
+   "weekday_days": 255,
+   "saturday": 0.465,
+   "saturday_days": 52,
+   "sunday": 0.398,
+   "sunday_days": 58
+  },
+  {
+   "id": 40180,
+   "name": "Oak Park-Forest Park",
+   "lines": [
+    "Blue"
+   ],
+   "saturday": 0.27,
+   "saturday_days": 52,
+   "weekday": 0.602,
+   "weekday_days": 255,
+   "sunday": 0.199,
+   "sunday_days": 58
+  },
+  {
+   "id": 40220,
+   "name": "Western-Forest Park",
+   "lines": [
+    "Blue"
+   ],
+   "saturday": 0.446,
+   "saturday_days": 52,
+   "sunday": 0.34,
+   "sunday_days": 58,
+   "weekday": 0.587,
+   "weekday_days": 255
+  },
+  {
+   "id": 40970,
+   "name": "Cicero-Forest Park",
+   "lines": [
+    "Blue"
+   ],
+   "saturday": 0.372,
+   "saturday_days": 52,
+   "sunday": 0.288,
+   "sunday_days": 58,
+   "weekday": 0.571,
+   "weekday_days": 255
+  },
+  {
+   "id": 41050,
+   "name": "Linden",
+   "lines": [
+    "Purple"
+   ],
+   "weekday": 0.553,
+   "weekday_days": 255,
+   "saturday": 0.46,
+   "saturday_days": 52,
+   "sunday": 0.324,
+   "sunday_days": 58
+  },
+  {
+   "id": 40400,
+   "name": "Noyes",
+   "lines": [
+    "Purple"
+   ],
+   "saturday": 0.441,
+   "saturday_days": 52,
+   "weekday": 0.54,
+   "weekday_days": 255,
+   "sunday": 0.269,
+   "sunday_days": 58
+  },
+  {
+   "id": 41670,
+   "name": "Conservatory",
+   "lines": [
+    "Green"
+   ],
+   "sunday": 0.453,
+   "sunday_days": 58,
+   "weekday": 0.534,
+   "weekday_days": 255,
+   "saturday": 0.497,
+   "saturday_days": 52
+  },
+  {
+   "id": 40300,
+   "name": "Indiana",
+   "lines": [
+    "Green"
+   ],
+   "sunday": 0.261,
+   "sunday_days": 58,
+   "saturday": 0.321,
+   "saturday_days": 52,
+   "weekday": 0.499,
+   "weekday_days": 255
+  },
+  {
+   "id": 41680,
+   "name": "Oakton-Skokie",
+   "lines": [
+    "Yellow"
+   ],
+   "sunday": 0.204,
+   "sunday_days": 58,
+   "saturday": 0.266,
+   "saturday_days": 52,
+   "weekday": 0.472,
+   "weekday_days": 255
+  },
+  {
+   "id": 40690,
+   "name": "Dempster",
+   "lines": [
+    "Purple"
+   ],
+   "weekday": 0.461,
+   "weekday_days": 255,
+   "sunday": 0.338,
+   "sunday_days": 58,
+   "saturday": 0.452,
+   "saturday_days": 52
+  },
+  {
+   "id": 41250,
+   "name": "Central-Evanston",
+   "lines": [
+    "Purple"
+   ],
+   "sunday": 0.22,
+   "sunday_days": 58,
+   "saturday": 0.269,
+   "saturday_days": 52,
+   "weekday": 0.46,
+   "weekday_days": 255
+  },
+  {
+   "id": 40520,
+   "name": "Foster",
+   "lines": [
+    "Purple"
+   ],
+   "sunday": 0.27,
+   "sunday_days": 58,
+   "weekday": 0.419,
+   "weekday_days": 255,
+   "saturday": 0.434,
+   "saturday_days": 52
+  },
+  {
+   "id": 40840,
+   "name": "South Boulevard",
+   "lines": [
+    "Purple"
+   ],
+   "sunday": 0.194,
+   "sunday_days": 58,
+   "weekday": 0.397,
+   "weekday_days": 255,
+   "saturday": 0.267,
+   "saturday_days": 52
+  },
+  {
+   "id": 40940,
+   "name": "Halsted/63rd",
+   "lines": [
+    "Green"
+   ],
+   "sunday": 0.188,
+   "sunday_days": 58,
+   "weekday": 0.384,
+   "weekday_days": 255,
+   "saturday": 0.244,
+   "saturday_days": 52
+  },
+  {
+   "id": 40980,
+   "name": "Harlem-Forest Park",
+   "lines": [
+    "Blue"
+   ],
+   "saturday": 0.226,
+   "saturday_days": 52,
+   "sunday": 0.165,
+   "sunday_days": 58,
+   "weekday": 0.384,
+   "weekday_days": 255
+  },
+  {
+   "id": 41140,
+   "name": "King Drive",
+   "lines": [
+    "Green"
+   ],
+   "saturday": 0.238,
+   "saturday_days": 52,
+   "weekday": 0.334,
+   "weekday_days": 255,
+   "sunday": 0.196,
+   "sunday_days": 58
+  },
+  {
+   "id": 40600,
+   "name": "Kostner",
+   "lines": [
+    "Pink"
+   ],
+   "sunday": 0.141,
+   "sunday_days": 58,
+   "saturday": 0.174,
+   "saturday_days": 52,
+   "weekday": 0.29,
+   "weekday_days": 255
+  }
+ ]
+}
